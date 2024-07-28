@@ -116,8 +116,7 @@ EOF
     kubectl get pods --all-namespaces
 
 # Join any number of worker nodes
-
-To all the steps till installing binaries
+sudo kubeadm join <api-server-ip>:6443 --token <join-token> --discovery-token-ca-cert-hash <ca-cert-hash> 
 
 
 
